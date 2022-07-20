@@ -4,7 +4,7 @@
 /* ------common style-------  */
 body{
     font-family: 'Poppins', sans-serif;
-
+margin: 0px;
 }
 main{
     width: 100%;
@@ -311,6 +311,10 @@ footer{
           media query style mobile device
 ----------------------------------------------- -- */
 @media only screen and  (max-width:688px) {
+    body{
+        margin: 0;
+        overflow-x: hidden;
+    }
     .top-conatiner,.top-banner,.main-section{
         width:100%;
         margin: 0;
@@ -339,6 +343,8 @@ footer{
     .link-content{
         margin-left: 55px;
         background-color: white;
+        padding: 0px;
+        width:50%;
     }
     .today-match-container{
         width: 300px;
@@ -370,6 +376,10 @@ footer{
           media query style tablet device
 ----------------------------------------------- -- */
 @media only screen and  (min-width:689px)  and (max-width:992px){
+    body{
+        overflow-x: hidden;
+        margin: 0px;
+    }
     .top-conatiner,.main-container,.top-banner{
         width:100%;
         align-items: center;
@@ -424,7 +434,7 @@ footer{
     }
     footer{
         width:100%;
-        margin-left: 100px;
+      
      }
 
 }
