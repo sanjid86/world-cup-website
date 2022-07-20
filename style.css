@@ -8,6 +8,7 @@ body{
 }
 main{
     width: 100%;
+    margin-top: 80px;
 }
 /* ---------------------------------------------
        bannner container style
@@ -20,8 +21,8 @@ main{
     margin-left: 100px;
     margin-right: 100px;
     display: flex;
-    background-color: black;
-    border-radius: 10px;
+    background-color: #161616;
+    border-radius: 20px;
 }
 .banner-items{
     width: 50%;
@@ -34,7 +35,7 @@ main{
 }
 .banner-info{
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
 }
 .watch-btn{
     background-color: #DD0000;
@@ -75,7 +76,7 @@ main{
 .link-content{
     width: 200px;
     height: 200px;
-    background-color: black;
+    background-color: #161616;
     padding: 30px ;
     border-radius: 5px;
     text-align: center;
@@ -105,7 +106,6 @@ main{
     padding: 10px 15px;
     border-radius: 5px;
 }
-
 /* ----------blog content style-----------  */
 .blog-content{
     margin-left: 60px;
@@ -143,6 +143,51 @@ main{
 .duration-comment span{
     margin-left: 5px;
 }
+/* ------------upcoming match style--------  */
+#match-link-color{
+    background-color:#DD0000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#blog-link-color,#group-link-color{
+    background-color:white;
+    color: black;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.match-content{
+    margin-left: 20px;
+}
+.match-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.matches{
+    width: 240px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 35px  30px 50px 30px;
+}
+.matches img{
+    width: 100px;
+    height: 60px;
+    margin: 0px 20px;
+}
+.flags{
+    display: flex;
+    justify-content: center;
+}
+.match-info{
+    text-align: center;
+}
+.match-detail{
+    color: #4D4D4D;
+    font-size: 16px;
+}
 /* ---------------------------------------------
        footer  style
 ----------------------------------------- */
@@ -150,7 +195,7 @@ main{
 footer{
     height: 300px;
     margin-top: 50px;
-    background-color: black;
+    background-color: #161616;
     color: #fff;
     text-align: center;
 }
@@ -177,8 +222,10 @@ footer{
           media query style mobile device
 ----------------------------------------------- -- */
 @media only screen and  (max-width:767px) {
-    .top-conatiner{
+    .top-conatiner,.top-banner{
         width:100%;
+        margin: 0;
+        align-items: center;
     }
     .top-banner,.main-container{
         flex-direction: column;
@@ -190,9 +237,15 @@ footer{
     .banner-info{
         font-size: 8px;
     }
+    .banner-img img{
+        width: 350px;
+        height: 400px;
+        margin-top: 5px;
+    }
     .main-container{
+        width: 100%;
         margin-left: 0px;
-        margin-right: 50px;
+        margin-right: 0px;
     }
     .link-content{
         margin-left: 55px;
@@ -202,13 +255,14 @@ footer{
         grid-template-columns: repeat(1,1fr);
     }
     footer{
-        height: 600px;
+       width:100%;
+       height: 100%;
     }
     .footer-content a{
         display: block;
     }
     .social-icon i{
-        margin-top: 280px;
+       margin-top: 60%;
     }
     
 }
@@ -234,4 +288,5 @@ footer{
     .blog-content{
         grid-template-columns: repeat(2,1fr) ;
     }
+
 }
