@@ -92,6 +92,11 @@ main{
     padding: 10px 15px;
     margin-bottom: 30px;
     border-radius: 5px;
+    transition: 0.2s;
+}
+#match-link:hover{
+    border:3px solid #DD0000;
+    transition: 0.5s;
 }
 #group-link{
     background-color:white;
@@ -221,7 +226,7 @@ footer{
 /* ----------------------------------------------
           media query style mobile device
 ----------------------------------------------- -- */
-@media only screen and  (max-width:767px) {
+@media only screen and  (max-width:688px) {
     .top-conatiner,.top-banner{
         width:100%;
         margin: 0;
@@ -251,7 +256,7 @@ footer{
         margin-left: 55px;
         background-color: white;
     }
-    .blog-content{
+    .blog-content,.match-content{
         grid-template-columns: repeat(1,1fr);
     }
     footer{
@@ -269,24 +274,55 @@ footer{
 /* ----------------------------------------------
           media query style tablet device
 ----------------------------------------------- -- */
-@media only screen and  (min-width:768px)  and (max-width:1023px){
-    .top-conatiner{
+@media only screen and  (min-width:689px)  and (max-width:992px){
+    .top-conatiner,.main-container,.top-banner{
         width:100%;
+        align-items: center;
+        margin: 0px;
     }
-    .top-banner{
-        width:100%;
+    .banner-title{
+        font-size: 30px;
+    }
+    .banner-info{
+        font-size: 12px;
     }
     .main-container{
         flex-direction: column;
-        align-items: center;
+        margin-left: 0;
     }
     .link-content {
+        width: 300px;
+        margin-right: 200px;
+        background-color: white;
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        background-color: white;
+        column-gap: 15px;
     }
-    .blog-content{
+    #match-link,#group-link{
+        width: 150px;
+        height: 30px;
+        border: 1px solid gray;
+    }
+    #blog-link{
+        width: 150px;
+        height: 30px;
+    }
+    #group-link-color,#blog-link-color{
+        width: 150px;
+        height: 30px;
+        border: 1px solid gray;
+    }
+    #match-link-color{
+        width: 150px;
+        height: 30px;
+    }
+    .blog-content,.match-content{
         grid-template-columns: repeat(2,1fr) ;
+        margin-left: 100px;
     }
+    footer{
+        width:100%;
+        margin-left: 100px;
+     }
 
 }
