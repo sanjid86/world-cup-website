@@ -1,0 +1,231 @@
+/* ---------google foont style---------  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ------common style-------  */
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+main{
+    width: 100%;
+}
+/* ---------------------------------------------
+       bannner container style
+ ----------------------------------------- */
+ .top-conatiner{
+    width: 100%;
+}
+ .top-banner{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    background-color: black;
+    border-radius: 10px;
+}
+.banner-items{
+    width: 50%;
+    padding: 60px;
+    margin-left: 50px;
+}
+.banner-title{
+    color: #fff;
+    font-size: 50px;
+}
+.banner-info{
+    color: #fff;
+    font-size: 16px;
+}
+.watch-btn{
+    background-color: #DD0000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.fa-greater-than{
+    margin-left: 10px;
+}
+.watch-btn:hover{
+    background-color: purple;
+    color: white;
+    transition: 0.5s;
+}
+.banner-img{
+    padding: 10px 10px 0px 10px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.banner-img img{
+    width: 400px;
+    height: 450px;
+}
+
+/* ---------------------------------------------
+       main container style
+----------------------------------------- */
+.main-container{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+
+}
+.link-content{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    padding: 30px ;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.link-content a{
+    text-decoration:none;
+    display: block;
+}
+#match-link{
+    background-color:white;
+    color: black;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+#group-link{
+    background-color:white;
+    color: black;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+#blog-link{
+    background-color:#DD0000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* ----------blog content style-----------  */
+.blog-content{
+    margin-left: 60px;
+}
+.blog-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+.blogs{
+    width: 250px;
+    display: block;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.blogs img{
+    width: 250px;
+    height: 140px;
+}
+.blog-info{
+    padding: 15px 15px 0px 15px;
+}
+.blog-btn{
+    padding: 5px 20px;
+}
+.blog-title{
+    font-size: 14px;
+}
+.duration-comment{
+    padding: 0px 15px 15px 15px;
+}
+.fa-message{
+    margin-left: 30px;
+}
+.duration-comment span{
+    margin-left: 5px;
+}
+/* ---------------------------------------------
+       footer  style
+----------------------------------------- */
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+.footer-content{
+    margin:0px 150px;
+    padding-top: 40px;
+    height: 200px;
+}
+.footer-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.footer-content a{
+    text-decoration: none;
+    color: #B9B9B9;
+    margin: 30px ;
+    font-size: 14px;
+}
+.social-icon i{
+    margin: 10px 20px;
+}
+
+/* ----------------------------------------------
+          media query style mobile device
+----------------------------------------------- -- */
+@media only screen and  (max-width:767px) {
+    .top-conatiner{
+        width:100%;
+    }
+    .top-banner,.main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-container{
+        margin-left: 0px;
+        margin-right: 50px;
+    }
+    .link-content{
+        margin-left: 55px;
+        background-color: white;
+    }
+    .blog-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer{
+        height: 550px;
+    }
+    .footer-content a{
+        display: block;
+    }
+    .social-icon i{
+        margin-top: 240px;
+    }
+    
+}
+/* ----------------------------------------------
+          media query style tablet device
+----------------------------------------------- -- */
+@media only screen and  (min-width:768px)  and (max-width:1023px){
+    .top-conatiner{
+        width:100%;
+    }
+    .top-banner{
+        width:100%;
+    }
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .link-content {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: white;
+    }
+    .blog-content{
+        grid-template-columns: repeat(2,1fr) ;
+    }
+}
