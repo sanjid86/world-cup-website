@@ -187,6 +187,9 @@ footer{
     .banner-title{
         font-size: 20px;
     }
+    .banner-info{
+        font-size: 8px;
+    }
     .main-container{
         margin-left: 0px;
         margin-right: 50px;
